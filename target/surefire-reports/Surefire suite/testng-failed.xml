@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" parallel="classes" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="recipesTest">
+        <methods>
+          <include name="searchRecipes"/>
+          <include name="searchRecipesByNutrient"/>
+          <include name="TearDownSuite"/>
+          <include name="getRandomRecipes"/>
+          <include name="testAnalyzeRecipe"/>
+          <include name="SetUpSuite"/>
+          <include name="searchRecipesByIngredients"/>
+        </methods>
+      </class> <!-- recipesTest -->
+      <class name="mealPlanTest">
+        <methods>
+          <include name="testImageClassification"/>
+          <include name="testMealPlannerGenerate"/>
+          <include name="testMealPlannerParameterGenerate"/>
+          <include name="TearDownSuite"/>
+          <include name="SetUpSuite"/>
+          <include name="testAddMealPlan"/>
+        </methods>
+      </class> <!-- mealPlanTest -->
+      <class name="ConnectUserTest">
+        <methods>
+          <include name="testConnectUser"/>
+          <include name="TearDownSuite"/>
+          <include name="SetUpSuite"/>
+        </methods>
+      </class> <!-- ConnectUserTest -->
+      <class name="petRequestTest">
+        <methods>
+          <include name="deletePetTest"/>
+          <include name="findPetByIdTest"/>
+          <include name="TearDownSuite"/>
+          <include name="updatePetTest"/>
+          <include name="SetUpSuite"/>
+          <include name="findPetByStatusTest"/>
+        </methods>
+      </class> <!-- petRequestTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
